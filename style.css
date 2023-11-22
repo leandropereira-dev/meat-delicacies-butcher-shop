@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Open+Sans:wght@400;600&family=Questrial&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  max-width: 1920px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container-logo,
+.container-menu {
+  background-color: #2e0101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.coluna-menu.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.coluna-menu ul {
+  font-family: "Questrial", sans-serif;
+  list-style: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #240000;
+  width: 1065px;
+  height: 80px;
+  border-radius: 5px;
+  border: 2px solid #430606;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 86px;
+}
+
+.coluna-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.coluna-menu a:hover {
+  color: hsl(6, 94%, 85%);
+}
+
+.header-banner {
+  background-color: #d9d9d9;
+}
+
+.header-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* estilos aplicados a sessão carnes*/
+
+.carnes {
+  background-color: #d9d9d9;
+  padding-bottom: 105px;
+}
+
+.header-carnes-exoticas,
+.header-carnes-nobres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  gap: 34px;
+}
+
+.header-carnes-nobres {
+  align-items: end;
+  gap: 165px;
+}
+
+.carnes h2 {
+  color: #530202;
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.carnes-exoticas-cards,
+.carnes-nobres-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 65px;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  width: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  background: #e6e7e8;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-descricao {
+  background: #e6e7e8;
+  padding: 15px;
+  border-radius: 4px;
+  display: grid;
+}
+
+.nome-carne {
+  margin-bottom: 10px;
+}
+
+.nome-carne a {
+  color: #530202;
+  text-decoration: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.preco {
+  color: #605e5e;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.valor {
+  color: #4b7e0a;
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.divisor-sessao-carnes {
+  display: flex;
+  justify-content: center;
+  margin-top: 97px;
+}
+
+/* estilos aplicados a sessão quem somos */
+
+#quem-somos {
+  background-color: #1b0101;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:170px 0 190px 230px;
+  /* padding-bottom: 190px; */
+}
+
+#quem-somos h2 {
+  color: #dfdddd;
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.texto-quem-somos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quem-somos p {
+  color: #c8c7c7;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6rem;
+  letter-spacing: 0.3px;
+  max-width: 670px;
+  margin-bottom: 30px;
+}
+
+.foto-loja {
+  position: absolute;
+}
+
+.logo-giratoria {
+  position: relative;
+  top: 432px;
+  left: 397px;
+  animation: girarLogo 14s linear infinite;
+}
+
+@keyframes girarLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* estilização da sessão parceiros */
+
+.parceiros {
+  background-color: #000000;
+  height: 316px;
+}
+
+.parceiros h2 {
+  color: #c8c6c6;
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 48px;
+  margin-left: 233px;
+}
+
+.logo-parceiros {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  gap: 144px;
+}
+
+#contato {
+  height: 1000px;
+}
+
+#contato h2 {
+  color: #530202;
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 118px;
+}
+
+.formulario {
+  background-color: #2e0101;
+  color: #c8c6c6;
+  width: 646px;
+  height: 1043px;
+}
