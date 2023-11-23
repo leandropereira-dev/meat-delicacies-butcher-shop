@@ -170,7 +170,7 @@ body {
   background-color: #1b0101;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding:170px 0 190px 230px;
+  padding: 170px 0 190px 230px;
   /* padding-bottom: 190px; */
 }
 
@@ -265,4 +265,54 @@ body {
   color: #c8c6c6;
   width: 646px;
   height: 1043px;
+}
+
+.footer-principal {
+  background-color: #4e0b0b;
+  height: 427px;
+}
+
+.footer-container-filho {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-principal h2 {
+  color: #f1bbbb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.footer-principal p {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.682%; /* 30.003px */
+  letter-spacing: 0.27px;
+}
+
+.footer-principal .horarios {
+  color: #c8c6c6;
+
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 166.682%; /* 25.002px */
+letter-spacing: 0.225px;
+}
+
+hr {
+height: 1px;
+background: rgba(241, 187, 187, 0.30);
+}
+
+.container-atendimento {
+  display: inline-block;
 }
