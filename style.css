@@ -273,46 +273,89 @@ body {
 }
 
 .footer-container-filho {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding-top: 60px;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 154px;
 }
 
 .footer-principal h2 {
   color: #f1bbbb;
   font-family: "Open Sans", sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
+  padding-bottom: 15px;
 }
 
-.footer-principal p {
+.footer-principal span {
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 166.682%; /* 30.003px */
+  letter-spacing: 0.27px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-principal p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.682%;
   letter-spacing: 0.27px;
 }
 
 .footer-principal .horarios {
   color: #c8c6c6;
 
-font-family: 'Open Sans', sans-serif;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 166.682%; /* 25.002px */
-letter-spacing: 0.225px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166.682%; /* 25.002px */
+  letter-spacing: 0.225px;
+}
+
+.footer-principal li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+.footer-principal a:hover {
+  color: hsl(6, 94%, 85%);
 }
 
 hr {
-height: 1px;
-background: rgba(241, 187, 187, 0.30);
+  height: 1px;
+  background: rgba(241, 187, 187, 0.3);
 }
 
-.container-atendimento {
-  display: inline-block;
+.endereco {
+  margin-bottom: 25px;
+}
+
+.footer-direitos-reservados {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.footer-direitos-reservados p {
+  color: #cecaca;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-principal li,
+p {
+  margin-top: 10px;
 }
