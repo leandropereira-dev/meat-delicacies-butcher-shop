@@ -267,6 +267,9 @@ body {
   height: 1043px;
 }
 
+/* estilização do footer */
+
+
 .footer-principal {
   background-color: #4e0b0b;
   height: 427px;
@@ -295,7 +298,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 166.682%; /* 30.003px */
+  line-height: 166.682%; 
   letter-spacing: 0.27px;
   display: flex;
   gap: 10px;
@@ -314,12 +317,11 @@ body {
 
 .footer-principal .horarios {
   color: #c8c6c6;
-
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 166.682%; /* 25.002px */
+  line-height: 166.682%; 
   letter-spacing: 0.225px;
 }
 
