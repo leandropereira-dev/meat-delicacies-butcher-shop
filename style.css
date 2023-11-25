@@ -171,7 +171,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 170px 0 190px 230px;
-  /* padding-bottom: 190px; */
 }
 
 #quem-somos h2 {
@@ -224,7 +223,7 @@ body {
 /* estilização da sessão parceiros */
 
 .parceiros {
-  background-color: #000000;
+  background-color: #000;
   height: 316px;
 }
 
