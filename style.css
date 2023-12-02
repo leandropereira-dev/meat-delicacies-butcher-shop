@@ -298,12 +298,53 @@ body {
 
 .formulario {
   background-color: #2e0101;
-  color: #c8c6c6;
-  width: 646px;
+  color: #fff;
+  width: 750px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.formulario p {
+  color: #FFF;  
+  font-family: 'Open Sans' sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 166.682%; /* 36.67px */
+  letter-spacing: 0.33px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.required_field{
+  color: #D80835;
+}
+
+input{
+  border: 1px solid transparent;
+  border-bottom: 1px solid #CCC;
+  padding: 5px 5px;
   
 }
 
-form {
+textarea{
+  padding: 10px 5px;
+  width: 400px;
+}
+
+.block{
+  display: block;
+}
+
+.box-input{
+  margin-bottom: 30px;
+}
+
+
+
+
+
 
 
 /* estilização do footer */
