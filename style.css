@@ -246,7 +246,8 @@ body {
 }
 
 #contato {
-  height: 1000px;
+  padding-bottom: 100px;
+  background-color: #e6e7e8;
 }
 
 #contato h2 {
@@ -257,7 +258,7 @@ body {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 130px;
+  padding-top: 130px;
 }
 
 .container-localizacao-form {
@@ -269,8 +270,9 @@ body {
 
 .localizacao{
   border-radius: 4px;
-  border: 3px solid rgba(117, 17, 17, 0.30);
+  border: 1px solid rgba(117, 17, 17, 0.30);
   padding: 55px 44px;
+  background-color: #fff;
 }
 
 .localizacao address{
@@ -297,20 +299,21 @@ body {
 }
 
 .formulario {
-  background-color: #2e0101;
-  color: #fff;
+  background-color: #fff;
+  color: #530202;
   width: 750px;
-  padding: 20px;
+  padding: 20px 40px;
   border-radius: 4px;
+  border: 1px solid rgba(117, 17, 17, 0.30);
 }
 
 .formulario p {
-  color: #FFF;  
+  color: #530202;  
   font-family: 'Open Sans' sans-serif;
-  font-size: 22px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 166.682%; /* 36.67px */
+  line-height: 146.682%; /* 36.67px */
   letter-spacing: 0.33px;
   text-transform: uppercase;
   text-align: center;
@@ -318,27 +321,64 @@ body {
 }
 
 .required_field{
-  color: #D80835;
+  color: #d80835;
+  padding: 0 6px;
+}
+
+label{
+  font-size: 22px;
 }
 
 input{
-  border: 1px solid transparent;
-  border-bottom: 1px solid #CCC;
-  padding: 5px 5px;
-  
+  border: 1px solid hsl(6, 94%, 85%);
+  border-radius: 2px;
+  font-size: 18px;
 }
 
 textarea{
   padding: 10px 5px;
-  width: 400px;
+  width: 500px;
+  border: 1px solid hsl(6, 94%, 85%);
 }
 
 .block{
   display: block;
 }
 
-.box-input{
+.btn-formulario{
+  margin:20px 0;
+  height: 50px;
+  width: 150px;
+}
+
+.box-input-pessoal{
+  margin-bottom: 25px;
+  display: grid;
+  gap: 5px;
+}
+
+.box-input-pessoal input {
+  height: 40px;
+  padding: 10px 10px;
+}
+
+
+
+.box-input-preferencias {
   margin-bottom: 30px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.box-input-preferencias input {
+  margin-left: 20px;
+}
+
+
+
+.box-input{
+  margin-bottom: 25px;
 }
 
 
