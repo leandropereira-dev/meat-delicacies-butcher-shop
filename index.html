@@ -253,34 +253,84 @@
       <div>
         <h2>contato</h2>
       </div>
-      <div class="formulario">
-        <form action="">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Nome" required />
-            <label for="e-mail">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="E-mail" required />
-            <label for="telefone">Telefone:</label>
-            <input
+      <div class="container-localizacao-form">
+        <div class="localizacao">
+          <address>
+            <span><img src="img/icon/tel.svg" alt="ícone de telefone">(031) 99999-9999 (031) 9999-9999</span>
+            <span><img src="img/icon/email.svg" alt="ícone de e-mail">contato@deliciasdacarne.com</span>
+            <span><img src="img/icon/locatio_circle.svg" alt="ícone de localização">Rua xxxxxxxxxx n° 000, Bairro xxxxxxxx, BH-MG, CEP: 00000-000</span>
+          </address>
+          <div class="google-map">
+            <img src="img/google 1.png" alt="">
+          </div>
+        </div>
+        <div class="formulario">
+          <p>Cadastre-se para ser informado sobre as novidades do Açougue Delícias da Carne</p>
+          <form action="">
+            <div>
+              <label for="nome">Nome:<span class="required_field">* </span></label>
+              <input type="text" id="nome" name="nome" placeholder="Nome" required />
+            </div>
+            <div>
+              <label for="e-mail">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="E-mail" required />
+            </div>
+            <div>
+              <label for="telefone">Telefone:<span class="required_field">* </span></label>
+              <input
               type="tel"
               id="telefone"
               name="telefone"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               placeholder=" (00)-00000-0000"
               required />
-            <label for="preferências">Preferências:</label>
-            <input
+            </div>
+            <div>
+              <label for="preferências">Preferências:</label>
+              <input
               type="radio"
               name="preferências"
               id="inCarnesExóticas"
               required />Carnes Exóticas
-            <input
+              <input
               type="radio"
               name="preferências"
               id="inCarnesNobres"
               required />Carnes Nobres
-        </form>
+            </div>
+            <div>
+              <label for="favoritos">Tipo de carne favorita:</label>
+              <select name="favoritos" id="favoritos">
+                <option value="sem categoria">Sem categoria</option>
+                <option value="carnes nobres">Carnes nobres</option>
+                <option value="carnes exoticas">Carnes exóticas</option>
+              </select>
+            </div>
+            <div>
+              <label for="preferências de meios de notificação">Receber notificação por:</label>
+              <label>
+              <input type="checkbox" name="todosMeios">
+              Todos os Meios
+              </label>
+              <label>
+              <input type="checkbox" name="sms">
+              SMS
+              </label>
+              <label>
+              <input type="checkbox" name="email">
+              E-mail
+            </label>
+            </div>
+            <div>
+              <label for="mensagem">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+              <input type="submit" id="enviar" value="Enviar">
+            </div>
+          </form>
+        </div>
       </div>
-      <div></div>
     </section>
     <footer class="footer-principal">
       <div class="footer-container-filho">

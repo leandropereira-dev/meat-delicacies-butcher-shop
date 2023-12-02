@@ -257,15 +257,54 @@ body {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 118px;
+  margin-top: 130px;
+}
+
+.container-localizacao-form {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.localizacao{
+  border-radius: 4px;
+  border: 3px solid rgba(117, 17, 17, 0.30);
+  padding: 55px 44px;
+}
+
+.localizacao address{
+  display:grid;
+  gap: 10px;
+}
+
+.localizacao span {
+  color: #2E0101;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 166.682%; /* 35.003px */
+  letter-spacing: 0.315px;
+}
+
+.localizacao img {
+  margin-right: 15px;
+}
+
+.google-map {
+  margin-top: 35px;
 }
 
 .formulario {
   background-color: #2e0101;
   color: #c8c6c6;
   width: 646px;
-  height: 1043px;
+  
 }
+
+form {
+
 
 /* estilização do footer */
 
@@ -361,3 +400,4 @@ hr {
 p {
   margin-top: 10px;
 }
+
