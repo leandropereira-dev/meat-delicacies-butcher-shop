@@ -313,9 +313,8 @@ body {
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 146.682%; /* 36.67px */
+  /* line-height: 33px;  */
   letter-spacing: 0.33px;
-  text-transform: uppercase;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -339,16 +338,11 @@ textarea{
   padding: 10px 5px;
   width: 500px;
   border: 1px solid hsl(6, 94%, 85%);
+  border-radius: 2px;
 }
 
 .block{
   display: block;
-}
-
-.btn-formulario{
-  margin:20px 0;
-  height: 50px;
-  width: 150px;
 }
 
 .box-input-pessoal{
@@ -375,6 +369,45 @@ textarea{
   margin-left: 20px;
 }
 
+select {
+  background-color: rgba(255, 202, 201, 15);
+  font-size: 20px;
+  padding: 5px;
+  color: #4e0b0b;
+}
+
+.box-input-notificacao {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.box-input-notificacao input {
+  margin-left: 20px;
+}
+
+
+.btn-formulario {
+  margin:20px 0;
+  background-color: #2e0101;
+  color: #FFF;
+  border: 1px solid hsl(6, 94%, 85%);
+  width: 150px;
+  height: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .5s;
+  border-radius: 4px;
+  font-weight:600;
+  letter-spacing: 0.93px;
+}
+
+.btn-formulario:hover {
+  background-color: hsl(6, 94%, 85%);
+  border-color: #4e0b0b;
+  color: #530202;
+}
 
 
 .box-input{

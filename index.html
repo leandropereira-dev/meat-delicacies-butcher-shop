@@ -265,7 +265,7 @@
           </div>
         </div>
         <div class="formulario">
-          <p>Cadastre-se para ser informado sobre as novidades do Açougue Delícias da Carne</p>
+          <p>Receba Novidades do Açougue Delícias da Carne ao se Cadastrar!</p>
           <form action="">
             <div class="box-input-pessoal">
               <label for="nome">Nome:<span class="required_field">* </span></label>
@@ -301,12 +301,17 @@
             <div class="box-input">
               <label for="favoritos">Tipo de carne favorita:</label>
               <select name="favoritos" id="favoritos">
-                <option value="sem categoria">Sem categoria</option>
-                <option value="carnes nobres">Carnes nobres</option>
-                <option value="carnes exoticas">Carnes exóticas</option>
+                <option value="sem categoria">Sem categoria(Todos da Agenda)</option>
+                <option value="carnes">Bovina</option>
+                <option value="carnes">Aves</option>
+                <option value="carnes">Suína</option>
+                <option value="carnes">Peixes</option>
+                <option value="carnes">Répteis</option>
+                <option value="carnes">Animais marinhos</option>
+                <option value="carnes">Outros</option>
               </select>
             </div>
-            <div class="box-input">
+            <div class="box-input-notificacao">
               <label for="preferências de meios de notificação">Receber notificação por:</label>
               <label>
               <input type="checkbox" name="todosMeios">
@@ -322,7 +327,7 @@
             </label>
             </div>
             <div class="box-input"></div>
-              <label for="mensagem">Mensagem</label>
+              <label for="mensagem">Mensagem:</label>
               <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="block"></textarea>
               <input type="submit" id="enviar" value="Enviar" class="btn-formulario">
             </div>
