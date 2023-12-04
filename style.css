@@ -298,6 +298,9 @@ body {
   margin-top: 35px;
 }
 
+.google-map img {
+  border: solid 1px hsl(6, 94%, 85%);
+}
 .formulario {
   background-color: #fff;
   color: #530202;
