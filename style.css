@@ -18,8 +18,9 @@ body {
 
 .container-logo,
 .container-menu {
-  background-color: #2e0101;
+  background: radial-gradient(circle, #2e0101, #2B0000 70%, #220000);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -34,7 +35,7 @@ body {
 .coluna-menu.fixed {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .coluna-menu ul {
@@ -168,7 +169,7 @@ body {
 /* estilos aplicados a sessão quem somos */
 
 #quem-somos {
-  background-color: #1b0101;
+  background: linear-gradient(to bottom, #2e0101, #000000);
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 170px 0 190px 230px;
@@ -518,3 +519,8 @@ p {
   margin-top: 10px;
 }
 
+
+
+.ativo {
+  background-color: #605e5e;
+}
