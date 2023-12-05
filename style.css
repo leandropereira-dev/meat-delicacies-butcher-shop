@@ -276,6 +276,10 @@ body {
   background-color: #fff;
 }
 
+.endereco-container-localizacao{
+  margin-top: 35px;
+}
+
 .localizacao address{
   display:grid;
   gap: 10px;
@@ -292,16 +296,21 @@ body {
 }
 
 .localizacao img {
-  margin-right: 15px;
+  margin-right: 10px;
+}
+
+.localizacao p {
+  font-size: 16px;
 }
 
 .google-map {
-  margin-top: 35px;
+  margin: 20px 0  35px;
+  width: 815px;
+  height: 475px;
+  border: 1px solid hsl(6, 94%, 85%);
+  border-radius: 3px;
 }
 
-.google-map img {
-  border: solid 1px hsl(6, 94%, 85%);
-}
 .formulario {
   background-color: #fff;
   color: #530202;
