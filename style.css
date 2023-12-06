@@ -64,6 +64,10 @@ body {
   color: hsl(6, 94%, 85%);
 }
 
+.coluna-menu a.ativo {
+  color: hsl(6, 94%, 85%);
+}
+
 .header-banner {
   background-color: #d9d9d9;
 }
@@ -277,16 +281,16 @@ body {
 }
 
 .endereco-container-localizacao{
-  margin-top: 45px;
+  /* margin-top: 45px; */
 }
 
 .localizacao address{
   display:grid;
-  gap: 10px;
+  gap: 20px;
 }
 
 .localizacao span {
-  color: #2E0101;
+  color: #530202;
   font-family: 'Open Sans' sans-serif;
   font-size: 21px;
   font-style: normal;
@@ -403,9 +407,9 @@ select {
 
 .btn-formulario {
   margin:20px 0;
-  background-color: #2e0101;
+  background-color: #020791;
   color: #FFF;
-  border: 1px solid hsl(6, 94%, 85%);
+  border: 1px solid #c8c6c6;
   width: 150px;
   height: 50px;
   text-transform: uppercase;
@@ -414,12 +418,14 @@ select {
   border-radius: 4px;
   font-weight:600;
   letter-spacing: 0.93px;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .btn-formulario:hover {
   background-color: hsl(6, 94%, 85%);
-  border-color: #4e0b0b;
+  border: 1px solid #530202;
   color: #530202;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -530,6 +536,5 @@ p {
 
 
 
-.ativo {
-  background-color: #605e5e;
-}
+
+  
