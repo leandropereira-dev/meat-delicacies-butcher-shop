@@ -280,10 +280,6 @@ body {
   background-color: #fff;
 }
 
-.endereco-container-localizacao{
-  /* margin-top: 45px; */
-}
-
 .localizacao address{
   display:grid;
   gap: 20px;
@@ -295,7 +291,7 @@ body {
   font-size: 21px;
   font-style: normal;
   font-weight: 600;
-  line-height: 166.682%; /* 35.003px */
+  line-height: 166.682%; 
   letter-spacing: 0.315px;
 }
 
@@ -330,7 +326,6 @@ body {
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  /* line-height: 33px;  */
   letter-spacing: 0.33px;
   text-align: center;
   margin-bottom: 25px;
@@ -387,7 +382,7 @@ textarea{
 }
 
 select {
-  background-color: rgba(255, 202, 201, 15);
+  background-color: hsl(6, 94%, 91%);
   font-size: 20px;
   padding: 5px;
   color: #4e0b0b;
@@ -530,12 +525,9 @@ hr {
   font-weight: 400;
 }
 
-.footer-principal li,
-p {
+.footer-principal li, p {
   margin-top: 10px;
 }
 
 
 
-
-  
