@@ -16,8 +16,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.container-logo,
-.container-menu {
+.container-logo, .container-menu {
   background: radial-gradient(circle, #2e0101, #2B0000 70%, #220000);
   display: flex;
   flex-direction: column;
@@ -226,6 +225,7 @@ body {
   }
 }
 
+
 /* estilização da sessão parceiros */
 
 .parceiros {
@@ -249,6 +249,9 @@ body {
   padding-top: 48px;
   gap: 144px;
 }
+
+
+/*estilizção da sessão contato*/
 
 #contato {
   padding-bottom: 170px;
@@ -368,8 +371,6 @@ textarea{
   padding: 10px 10px;
 }
 
-
-
 .box-input-preferencias {
   margin-bottom: 30px;
   display: flex;
@@ -399,7 +400,6 @@ select {
   margin-left: 20px;
 }
 
-
 .btn-formulario {
   margin:20px 0;
   background: linear-gradient(#3E49ED, #020791);
@@ -414,7 +414,6 @@ select {
   font-weight:600;
   letter-spacing: 0.93px;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
-  
 }
 
 .btn-formulario:hover {
@@ -424,19 +423,12 @@ select {
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
-
 .box-input{
   margin-bottom: 25px;
 }
 
 
-
-
-
-
-
 /* estilização do footer */
-
 
 .footer-principal {
   background-color: #4e0b0b;
