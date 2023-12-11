@@ -16,7 +16,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.container-logo, .container-menu {
+.container-logo , .container-menu {
   background: radial-gradient(circle, #2e0101, #2B0000 70%, #220000);
   display: flex;
   flex-direction: column;
