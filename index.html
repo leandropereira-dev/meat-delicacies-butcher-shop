@@ -269,15 +269,17 @@
             <p class="horarios">Domingo das 08:00h as 12:00h</p>
         </div>
         <div class="formulario">
-          <p>Receba Novidades do Açougue Delícias da Carne ao se Cadastrar!</p>
-          <form>
+          <p>Cadastre-se para ser avisado sobre as novidades do Açougue Delícias da Carne!</p>
+          <form onsubmit="return validarFormulario()">
             <div class="box-input-pessoal">
-              <label for="nome">Nome:<span class="required_field">* </span></label>
+              <label for="nome">Nome:</label>
               <input type="text" id="nome" placeholder="Digite seu nome" required />
+              <span id="nomeError" class="error"></span>
             </div>
             <div class="box-input-pessoal">
-              <label for="e-mail">E-mail:<span class="required_field">* </span></label>
+              <label for="e-mail">E-mail:</label>
               <input type="email" id="email" placeholder="Digite seu e-mail" required />
+              <span id="emailError" class="error"></span>
             </div>
             <div class="box-input-pessoal">
               <label for="telefone">Telefone:</label>
@@ -287,6 +289,7 @@
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               placeholder="ex: (00)-00000-0000"
               required />
+              <span id="telefoneError" class="error"></span>
             </div>
             <div class="box-input-preferencias">
               <label for="preferências">Preferências:</label>
@@ -300,10 +303,11 @@
               id="inCarnesNobres"
               required />Carnes Nobres
             </div>
+            <span id="preferenciasError" class="error"></span>
             <div class="box-input">
               <label for="favoritos">Tipo de carne favorita:</label>
               <select id="favoritos">
-                <option value="sem categoria">Sem categoria(Todos da Agenda)</option>
+                <option value="sem categoria">Sem categoria (Todos da Agenda)</option>
                 <option value="carnes">Bovina</option>
                 <option value="carnes">Aves</option>
                 <option value="carnes">Suína</option>
@@ -312,6 +316,7 @@
                 <option value="carnes">Animais marinhos</option>
                 <option value="carnes">Outros</option>
               </select>
+              <span id="favoritosError" class="error"></span>
             </div>
             <div class="box-input-notificacao">
               <label for="preferências de meios de notificação">Receber notificação por:</label>
@@ -330,6 +335,7 @@
             </div>
             <div class="box-input"></div>
               <label for="mensagem">Mensagem:</label>
+              <span id="mensagemError" class="error"></span>
               <textarea id="mensagem" cols="30" rows="10" class="block"></textarea>
               <input type="button" id="enviar" value="Enviar" class="btn-formulario" onclick="validarFormulario()">
             </div>
