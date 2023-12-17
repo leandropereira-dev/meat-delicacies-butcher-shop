@@ -270,7 +270,7 @@
         </div>
         <div class="formulario">
           <p>Cadastre-se para ser avisado sobre as novidades do Açougue Delícias da Carne!</p>
-          <form onsubmit="return validarFormulario()">
+          <form>
             <div class="box-input-pessoal">
               <label for="nome">Nome:</label>
               <input type="text" id="nome" placeholder="Digite seu nome" required />
@@ -295,43 +295,44 @@
               <label for="preferências">Preferências:</label>
               <input
               type="radio"
-              id="inCarnesExóticas"
+              name="preferencias"
+              id="inCarnesExoticas"
               required />Carnes Exóticas
               <input
               type="radio"
-              name="preferências"
+              name="preferencias"
               id="inCarnesNobres"
               required />Carnes Nobres
+              <span id="preferenciasError" class="error"></span>
             </div>
-            <span id="preferenciasError" class="error"></span>
             <div class="box-input">
               <label for="favoritos">Tipo de carne favorita:</label>
-              <select id="favoritos">
-                <option value="sem categoria">Sem categoria (Todos da Agenda)</option>
-                <option value="carnes">Bovina</option>
-                <option value="carnes">Aves</option>
-                <option value="carnes">Suína</option>
-                <option value="carnes">Peixes</option>
-                <option value="carnes">Répteis</option>
-                <option value="carnes">Animais marinhos</option>
-                <option value="carnes">Outros</option>
+              <select id="favoritos" required>
+                <option value="selecione">Selecione uma opção</option>
+                <option value="bovina">Bovina</option>
+                <option value="aves">Aves</option>
+                <option value="suina">Suína</option>
+                <option value="peixes">Peixes</option>
+                <option value="repteis">Répteis</option>
+                <option value="animais_marinhos">Animais marinhos</option>
+                <option value="outros">Outros</option>
               </select>
               <span id="favoritosError" class="error"></span>
             </div>
             <div class="box-input-notificacao">
               <label for="preferências de meios de notificação">Receber notificação por:</label>
               <label>
-              <input type="checkbox">
-              Todos os Meios
+                <input type="checkbox" id="todosOsMeios" name="meiosNotificacao">
+                Todos os Meios
               </label>
               <label>
-              <input type="checkbox">
-              SMS
+                <input type="checkbox" id="smsCheckbox" name="meiosNotificacao">
+                SMS
               </label>
               <label>
-              <input type="checkbox">
-              E-mail
-            </label>
+                <input type="checkbox" id="emailCheckbox" name="meiosNotificacao">
+                E-mail
+              </label>
             </div>
             <div class="box-input"></div>
               <label for="mensagem">Mensagem:</label>

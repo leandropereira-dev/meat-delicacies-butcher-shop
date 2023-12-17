@@ -39,7 +39,6 @@ function validarFormulario() {
     const nome = document.getElementById('nome').value;
     if (nome.trim() === '' || nome.split(' ').length < 2) {
         displayError('nomeError', 'Nome não pode estar em branco e deve possuir pelo menos 2 nomes');
-        showAlert('Por favor, corrija os erros no formulário.');
         return false;
     }
 
@@ -49,37 +48,54 @@ function validarFormulario() {
       return false;
     }
 
-    // Validate telefone
     const telefone = document.getElementById('telefone').value.replace(/[\s()-]/g, '');
     if (telefone.length !== 11) {
       displayError('telefoneError', 'Telefone deve ter 11 caracteres');
       return false;
     }
 
-    // Validate preferences
-    const preferences = document.querySelectorAll('input[name="preferências"]:checked');
+    const preferences = document.querySelectorAll('input[name="preferencias"]:checked');
     if (preferences.length === 0) {
       displayError('preferenciasError', 'Ao menos uma preferência deve ser marcada');
       return false;
     }
 
-    // Validate favorite meat type
-    const favoriteMeat = document.getElementById('favoritos').value;
-    if (favoriteMeat === 'sem categoria') {
+    const favoriteMeat = document.getElementById('favoritos');
+    if (favoriteMeat.value === 'selecione') {
       displayError('favoritosError', 'Selecione um tipo de carne favorita');
       return false;
     }
 
-    // Validate message
+    const todosOsMeiosCheckbox = document.getElementById('todosOsMeios');
+    const smsCheckbox = document.getElementById('smsCheckbox');
+    const emailCheckbox = document.getElementById('emailCheckbox');
+  
+    if (!todosOsMeiosCheckbox.checked && !smsCheckbox.checked && !emailCheckbox.checked) {
+      displayError('notificacaoError', 'Selecione pelo menos uma opção de notificação');
+      return false;
+    }
+
+
+
+
+    
     const mensagem = document.getElementById('mensagem').value;
     if (mensagem.trim().length < 5) {
       displayError('mensagemError', 'Mensagem deve ter pelo menos 5 caracteres');
       return false;
     }
 
-    // Form is valid
     alert('Formulário enviado com sucesso!');
     return true;
+  }
+
+  function marcarTodosOsMeios() {
+    const todosOsMeiosCheckbox = document.getElementById('todosOsMeios');
+    const meioNotificacaoCheckboxes = document.querySelectorAll('.meioNotificacao');
+
+    meioNotificacaoCheckboxes.forEach((checkbox) => {
+      checkbox.checked = todosOsMeiosCheckbox.checked;
+    });
   }
 
   function validateEmail(email) {
